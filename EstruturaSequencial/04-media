@@ -1,0 +1,16 @@
+#include <stdio.h>
+float media(float n1,float n2,float n3,float n4);
+int main() {
+    float notas[4],result=0;
+    for(int i = 0;i < 4;i++){
+        printf("Digite a nota %i\n-->",i+1);
+        scanf("%f",&notas[i]);
+    }
+    result = media(notas[0],notas[1],notas[2],notas[3]);
+    printf("O resultado e %.2f",result);
+    return 0;
+}
+float media(float n1,float n2,float n3,float n4){
+    float result = (n1+n2+n3+n4)/4;
+    return result;
+}
